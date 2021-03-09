@@ -8,18 +8,13 @@ describe('Pruebas en 02-template-string.js',()=>{
 
         const saludo = getSaludo( nombre );
 
-        console.log=(saludo);
-
         expect(saludo).toBe('Hola '+ nombre+ '!');
     })
 
     // getSaludo debe de retornar Hola Carlos! si no hay argumento nombre
     test('getSaludo debe de retornar Hola Carlos! si no hay argumento nombre!', () => {
 
-        const saludo = getSaludo( );
-
-        
-
+        const saludo = getSaludo( );   
         expect(saludo).toBe('Hola Carlos!');
     })
 
